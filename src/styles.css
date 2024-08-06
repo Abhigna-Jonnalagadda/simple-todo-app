@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.todo-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+li {
+  padding: 5px;
+}
+li:hover {
+  font-size: 15px;
+  color: green;
+}
+.completed-todos li:hover {
+  color: red;
+}
