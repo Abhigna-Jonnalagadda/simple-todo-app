@@ -44,23 +44,23 @@ export default function App() {
     <div className="todo-lists">
       <div>
         <h1>Todos</h1>
-        <ul>
+        <ol>
           {unCompletedTodos.map(({ id, title }) => (
             <li key={id} onClick={() => handleDone({ id })}>
               {title}
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
       <div>
         <h1>Completed Todos</h1>
-        <ul class="completed-todos">
+        <ol class="completed-todos">
           {completedTodos.map(({ id, title }) => (
             <li key={id} onClick={() => handleDone({ id })}>
               {title}
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
     </div>
   );
